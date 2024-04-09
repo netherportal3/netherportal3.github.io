@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My header is cool</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="game.html">Game</a></li>
+        </ul>
+    </nav>
+<body>
+    <div class="container">
+        <h1>Welcome to Cookie Clicker!</h1>
+        <p>Click the cookie, you won't...</p>
+        <p id="score">Cookies: <span id="scoreValue">0</span></p>
+        <img src="cookie.png" alt="Cookie" id="cookie" width="50px" height="50px">
+    </div>
+
+    <script>
+        //game logic
+        let cookies = 0;
+
+        const cookie = document.getElementById('cookie');
+        const cookieCount = document.getElementById('scoreValue');
+
+        cookie.addEventListener('click', function() {
+            cookies++;
+            cookieCount.textContent = cookies;
+        });
+    </script>
+</body>
+</html>
