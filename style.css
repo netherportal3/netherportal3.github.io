@@ -9,10 +9,16 @@ html, body {
 }
 
 body {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
     font-family: Arial, sans-serif;
     overflow: hidden;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .navbar {
